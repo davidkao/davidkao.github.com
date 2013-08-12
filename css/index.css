@@ -123,8 +123,10 @@ h1.mark{zoom:1;filter: alpha(opacity=40);opacity: 0.40;}
 	.goodat .item span{line-height:84px;font-size:22px;}
 	.goodat .item{margin-bottom:30px;}
 	.portfolio .item{width:50%;}
+	.portfolio .item .inner{width:87%;}
 	
-	#about .intro,.goodat,.portfolio{margin:0 auto; width:75%;text-align:center;}
+	#about .intro,.goodat{margin:0 auto; width:75%;text-align:center;}
+	.portfolio{margin:0 auto; width:70%;text-align:center;}
 }
 
 @media screen and (min-width:1441px){
