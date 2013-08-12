@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,100italic,300italic,400italic,500italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/lightbox.css">
 	
 </head>
 
@@ -48,8 +49,8 @@
 			<!--start btn-->
 			<div class="main_btn absolute">
 				<div class="clearfix inner">
-					<a class="btn fltlft" href="#" style="margin-right:35px;">About</a>
-					<a class="btn fltlft" href="#">Portfolio</a>
+					<a class="btn fltlft" href="#about" style="margin-right:35px;">About</a>
+					<a class="btn fltlft" href="#portfolio">Portfolio</a>
 				</div>
 			</div>
 			<!--end btn-->
@@ -110,8 +111,10 @@
 				<!--start a_portfolio-->
 				<div class="fltlft item">
 					<div class="inner bw relative">
-						<a class="hover absolute" href="#"><div class="color"></div><div class="magnifier absolute"></div></a>
+						<a class="hover absolute" href="images/content/portfolio/dge/1.jpg" data-lightbox="dge-set" title="設計、網頁製作"><div class="color"></div><div class="magnifier absolute"></div></a>
 						<img src="images/content/portfolio/dge/1.jpg" alt="dge" />
+						<a href="images/content/portfolio/dge/2.jpg" class="absolute" style="display:none;" data-lightbox="dge-set" title="設計、網頁製作"></a>
+						<a href="images/content/portfolio/dge/3.jpg" class="absolute" style="display:none;" data-lightbox="dge-set" title="設計、網頁製作"></a>
 					</div>
 					<h2 class="name">DGE 華人大學院校數位聯合畢業展</h2>
 				</div>
@@ -120,8 +123,11 @@
 				<!--start a_portfolio-->
 				<div class="fltlft item">
 					<div class="inner bw relative">
-						<a class="hover absolute" href="#"><div class="color"></div><div class="magnifier absolute"></div></a>
+						<a class="hover absolute" href="images/content/portfolio/icd/1.jpg" data-lightbox="icd-set" title="部分設計、網頁製作"><div class="color"></div><div class="magnifier absolute"></div></a>
 						<img src="images/content/portfolio/icd/1.jpg" alt="icd" />
+						<a href="images/content/portfolio/icd/2.jpg" class="absolute" style="display:none;" data-lightbox="icd-set" title="部分設計、網頁製作"></a>
+						<a href="images/content/portfolio/icd/3.jpg" class="absolute" style="display:none;" data-lightbox="icd-set" title="部分設計、網頁製作"></a>
+						<a href="images/content/portfolio/icd/4.jpg" class="absolute" style="display:none;" data-lightbox="icd-set" title="部分設計、網頁製作"></a>
 					</div>
 					<h2 class="name">iCD 銀河愛音樂</h2>
 				</div>
@@ -155,8 +161,11 @@
 ================================================== -->
 <!-- Get Google CDN's jQuery and jQuery UI with fallback to local -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.js"></script>-->
 <script src="js/jquery.BlackAndWhite.js"></script>
+<script src="js/jquery.plusanchor.js"></script>
+<script src="js/lightbox-2.6.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>
