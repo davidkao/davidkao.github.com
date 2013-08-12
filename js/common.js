@@ -36,6 +36,6 @@ $(document).ready(function(){
 						$(this).find('.inner .hover .color').addClass('purple');
 						})
 					
-					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.4);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
+					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.5);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
 						   
 });
