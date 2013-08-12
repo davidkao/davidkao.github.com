@@ -1,6 +1,17 @@
 $(document).ready(function(){
 					$('.hov75').hover(function(){$(this).find('img').fadeTo(120,0.75)},function(){$(this).find('img').fadeTo(60,1)});
 					
+					
+					$(window).load(function(){
+						$('.bw').BlackAndWhite({
+							webworkerPath : false,
+							responsive:true,
+							//invertHoverEffect: true,
+							HoverEffect: true,
+							speed: {fadeIn: 150,fadeOut: 60 }
+						});
+					});
+					
 					//visual animation
 					$('.mark img').hover(
 						function(){
@@ -20,11 +31,11 @@ $(document).ready(function(){
 					$('.portfolio .item').each(function(i){
 						
 						if(i%2==0)
-						$(this).find('.inner .hover').addClass('green');
+						$(this).find('.inner .hover .color').addClass('green');
 						else
-						$(this).find('.inner .hover').addClass('purple');
+						$(this).find('.inner .hover .color').addClass('purple');
 						})
 					
-					$('.portfolio .item .inner').hover(function(){$(this).find('.hover').fadeTo(150,0.7)},function(){$(this).find('.hover').fadeTo(60,0)});
+					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.4);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
 						   
 });
