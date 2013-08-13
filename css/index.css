@@ -191,7 +191,7 @@ footer .info img{height:34px;margin-right:4px;zoom:1;filter: alpha(opacity=40);o
 
 @media screen and (min-width:1441px){
 	.full_back{width:100%;display:block;overflow:hidden;position:relative;}
-	.full_back .visual_back2{width:100%;display:block;position:absolute;top:0;}
+	.full_back .visual_back2{width:100%;display:block;top:0;}
 	.full_back .visual_back{width:100%;display:block;top:0;}
 	.goodat .item span{line-height:110px;}
 	.goodat .item{margin-bottom:42px;}
