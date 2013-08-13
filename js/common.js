@@ -30,13 +30,13 @@ $(document).ready(function(){
 					
 					$('.portfolio .item').each(function(i){
 						
-						if(i%2==0)
+						if(i%2==1)
 						$(this).find('.inner .hover .color').addClass('green');
 						else
 						$(this).find('.inner .hover .color').addClass('purple');
 						})
 					
-					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.7);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
+					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.40);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
 					
 					
 					// plus_anchor
@@ -63,5 +63,16 @@ $(document).ready(function(){
 
 						} // onInit
 					});
+					
+					
+					//colorbox
+					$('.port1').colorbox({rel:'port1'});
+					$('.port2').colorbox({rel:'port2'});
+					$('.port3').colorbox({rel:'port3'});
+					$('.port4').colorbox({rel:'port4'});
+					$('.port5').colorbox({rel:'port5'});
+					$('.port6').colorbox({rel:'port6'});
+					$('.port7').colorbox({rel:'port7'});
+					$('.youtube').colorbox({iframe:true, innerWidth:640, innerHeight:390});
 						   
 });
