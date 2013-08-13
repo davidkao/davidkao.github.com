@@ -54,14 +54,14 @@ height: 0;
 }
 /*select color*/
 ::selection {
-	background:#acefc9;
+	background:#a2ecb9;
 	color:#fff;
 }
 ::-moz-selection {
-	background:#acefc9;
+	background:#a2ecb9;
 	color:#fff;
 }
 ::-webkit-selection {
-	background:#acefc9;
+	background:#a2ecb9;
 	color:#fff;
 }
