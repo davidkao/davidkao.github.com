@@ -37,8 +37,8 @@
         
         #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
         #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(../images/content/prev.png) no-repeat; width:50px; height:45px; text-indent:-9999px;}
-        #cboxPrevious:hover{background:url(../images/content/prev_hover.png) no-repeat;}
+        #cboxPrevious:hover{background-position:0 -55px;}
         #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(../images/content/next.png) no-repeat; width:50px; height:45px; text-indent:-9999px;}
-        #cboxNext:hover{background:url(../images/content/next_hover.png) no-repeat;}
+        #cboxNext:hover{background-position:0 -55px;}
         #cboxClose{position:absolute; top:8px; right:15px; display:block; background:url(../images/content/close.png) no-repeat; width:60px; height:60px; text-indent:-9999px;}
-        #cboxClose:hover{background:url(../images/content/close_hover.png);}
+        #cboxClose:hover{background-position:0 -70px;}
