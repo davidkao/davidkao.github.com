@@ -3,19 +3,39 @@ $(document).ready(function(){
 					//function menu 
 					$(window).scroll(function() {
  					var height_1 = $('header').height()-40;
-					if($(this).scrollTop() >= height_1){
+					if($(this).scrollTop() >= height_1)
 						$('.func_btn').addClass('autoflow');
-						}
-					else{
+					else
 						$('.func_btn').removeClass('autoflow');
-						}
 					});
-					
 					
 					//detect mobile to disable some effect
 					mobile_colorbox();
+					
+					//fix main_visual  problem
+					var width =  $(window).width();
+						if ( width >= 1441 ){
+							var adj_height =( width * 762 /1440 ) - 5;
+							$('.full_back').height(adj_height);
+						 }
+						 else if ( width >= 768 && width <=1440 )
+						 	$('.full_back').css({'height':'762px'});
+						 else
+						 	$('.full_back').css({'height':'400px'});
+					
+					
 					$(window).resize(function () {
 						mobile_colorbox();
+						
+						var width =  $(window).width();
+						if ( width >= 1441 ){
+							var adj_height =( width * 762 /1440 ) - 5;
+							$('.full_back').height(adj_height);
+						 }
+						 else if ( width >= 768 && width <=1440 )
+						 	$('.full_back').css({'height':'762px'});
+						 else
+						 	$('.full_back').css({'height':'400px'});
 					});
 					
 					//hover effect
@@ -60,7 +80,7 @@ $(document).ready(function(){
 					$('body').plusAnchor({
 						easing: 'easeInOutExpo',
 						offsetTop:0,
-						speed: 600,
+						speed: 900,
 						onInit: function( base ) {
 
 							if ( base.initHash != '' && $(base.initHash).length > 0 ) {
@@ -102,3 +122,5 @@ function mobile_colorbox(){
         else
             $('.colorbox').colorbox({rel:'colorbox'});       
     }
+
+	
