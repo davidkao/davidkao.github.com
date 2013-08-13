@@ -16,7 +16,7 @@ $(document).ready(function(){
 					var width =  $(window).width();
 						if ( width >= 1441 ){
 							var adj_height =( width * 762 /1440 ) - 5;
-							$('.full_back').height(adj_height);
+							$('.full_back').css({'height':adj_height});
 						 }
 						 else if ( width >= 768 && width <=1440 )
 						 	$('.full_back').css({'height':'762px'});
