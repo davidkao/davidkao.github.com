@@ -16,8 +16,8 @@ $(document).ready(function(){
 					$('.mark img').hover(
 						function(){
 							$(this).parents(1).find('.visual_back2').stop().fadeTo(220,1);$(this).parents(1).find('h1.mark').stop().fadeTo(100,0.1);
-							$(this).parents(1).find('.mark.pos2').stop().animate({'marginTop':'9px','marginLeft':'-9px','opacity': 0.14},100);
-							$(this).parents(1).find('.mark.pos3').stop().animate({'marginTop':'-9px','marginLeft':'9px','opacity': 0.14},140);
+							$(this).parents(1).find('.mark.pos2').stop().animate({'marginTop':'12px','marginLeft':'-12px','opacity': 0.20},100);
+							$(this).parents(1).find('.mark.pos3').stop().animate({'marginTop':'-12px','marginLeft':'12px','opacity': 0.14},140);
 										},
 
 						function(){
