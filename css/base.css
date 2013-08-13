@@ -35,6 +35,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 .clear{clear:both;font-size:0;}
 .absolute{position:absolute;}
 .relative{position:relative;}
+.fixed{position:fixed;}
 a{text-decoration:none;}
 /* clearfix */ 
 .clearfix:after {

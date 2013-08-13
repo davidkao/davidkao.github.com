@@ -1,7 +1,27 @@
 $(document).ready(function(){
+					
+					//function menu 
+					$(window).scroll(function() {
+ 					var height_1 = $('header').height()-40;
+					if($(this).scrollTop() >= height_1){
+						$('.func_btn').addClass('autoflow');
+						}
+					else{
+						$('.func_btn').removeClass('autoflow');
+						}
+					});
+					
+					
+					//detect mobile to disable some effect
+					mobile_colorbox();
+					$(window).resize(function () {
+						mobile_colorbox();
+					});
+					
+					//hover effect
 					$('.hov75').hover(function(){$(this).find('img').fadeTo(120,0.75)},function(){$(this).find('img').fadeTo(60,1)});
 					
-					
+					//black and white plugin	
 					$(window).load(function(){
 						$('.bw').BlackAndWhite({
 							webworkerPath : false,
@@ -27,15 +47,12 @@ $(document).ready(function(){
 										}
 					)
 					
-					
+					//add class 'black' to cover a black on portfolio
 					$('.portfolio .item').each(function(i){
-						
-						if(i%2==1)
-						$(this).find('.inner .hover .color').addClass('green');
-						else
-						$(this).find('.inner .hover .color').addClass('purple');
-						})
+						$(this).find('.inner .hover .color').addClass('black');
+					})
 					
+					// A portfolio hover effect
 					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.40);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
 					
 					
@@ -76,3 +93,12 @@ $(document).ready(function(){
 					$('.youtube').colorbox({iframe:true, innerWidth:640, innerHeight:390});
 						   
 });
+
+
+
+function mobile_colorbox(){
+        if ( $(window).width() <= 767 )
+            $('.colorbox').colorbox.remove();
+        else
+            $('.colorbox').colorbox({rel:'colorbox'});       
+    }
