@@ -20,7 +20,7 @@ header{
 .full_back .visual_back,.full_back .visual_back2{position:fixed;}
 .mark{top:26%;z-index:3;display:block;width:100%;}
 .mark.pos2,.mark.pos3{zoom:1;filter: alpha(opacity=0);opacity: 0;}
-.mark.pos1{zoom:1;filter: alpha(opacity=40);opacity: 0.40;}
+.mark.pos1{zoom:1;filter: alpha(opacity=50);opacity: 0.50;}
 .mark img{display:block;margin:0 auto;}
 
 /*main_btn*/
