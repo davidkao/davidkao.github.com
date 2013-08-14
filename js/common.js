@@ -125,7 +125,10 @@ $(document).ready(function(){
 					
 					
 					//swipebox
-					$(".swipebox").swipebox();
+					$(".swipebox").swipebox({
+						hideBarsDelay : 0, // 0 to always show caption and action bar
+						videoMaxWidth : 1140, // videos max width
+					});
 						   
 });
 
