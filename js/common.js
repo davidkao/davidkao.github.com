@@ -10,7 +10,7 @@ $(document).ready(function(){
 					});
 					
 					//detect mobile to disable some effect
-					mobile_colorbox();
+					//mobile_colorbox();
 					
 					//fix main_visual  problem
 					var width =  $(window).width();
@@ -24,9 +24,14 @@ $(document).ready(function(){
 						 	$('.full_back').css({'height':'400px'});
 					
 					
+					
 					$(window).resize(function () {
-						mobile_colorbox();
+					
 						
+						//detect mobile to disable some effect
+						//mobile_colorbox();
+						
+						//fix main_visual  problem
 						var width =  $(window).width();
 						if ( width >= 1441 ){
 							var adj_height =( width * 762 /1440 ) - 5;
@@ -37,6 +42,23 @@ $(document).ready(function(){
 						 else
 						 	$('.full_back').css({'height':'400px'});
 					});
+					
+					
+					
+					var resizeTimer;
+					function resizeColorBox()
+					{
+						if (resizeTimer) clearTimeout(resizeTimer);
+						resizeTimer = setTimeout(function() {
+								if ($('#cboxOverlay').is(':visible')) {
+										$.colorbox.load(true);
+								}
+						}, 300)
+					}
+
+					$(window).resize(resizeColorBox);
+					window.addEventListener("orientationchange", resizeColorBox, false);
+					
 					
 					//hover effect
 					$('.hov75').hover(function(){$(this).find('img').fadeTo(120,0.75)},function(){$(this).find('img').fadeTo(60,1)});
@@ -102,25 +124,10 @@ $(document).ready(function(){
 					});
 					
 					
-					//colorbox
-					$('.port1').colorbox({rel:'port1'});
-					$('.port2').colorbox({rel:'port2'});
-					$('.port3').colorbox({rel:'port3'});
-					$('.port4').colorbox({rel:'port4'});
-					$('.port5').colorbox({rel:'port5'});
-					$('.port6').colorbox({rel:'port6'});
-					$('.port7').colorbox({rel:'port7'});
-					$('.youtube').colorbox({iframe:true, innerWidth:640, innerHeight:390});
+					//swipebox
+					$(".swipebox").swipebox();
 						   
 });
 
-
-
-function mobile_colorbox(){
-        if ( $(window).width() <= 767 )
-            $('.colorbox').colorbox.remove();
-        else
-            $('.colorbox').colorbox({rel:'colorbox'});       
-    }
 
 	
