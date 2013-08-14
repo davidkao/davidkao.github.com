@@ -83,7 +83,7 @@ $(document).ready(function(){
 										},
 
 						function(){
-							$(this).parents(1).find('.visual_back2').stop().fadeTo(100,0);$(this).parents(1).find('.mark.pos1').stop().fadeTo(250,0.50);
+							$(this).parents(1).find('.visual_back2').stop().fadeTo(100,0);$(this).parents(1).find('.mark.pos1').stop().fadeTo(250,0.40);
 							$(this).parents(1).find('.mark.pos2').stop().animate({'marginTop':0,'marginLeft':0,'opacity': 0},100);
 							$(this).parents(1).find('.mark.pos3').stop().animate({'marginTop':0,'marginLeft':0,'opacity': 0},140);
 										}
