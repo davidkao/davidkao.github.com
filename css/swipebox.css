@@ -1,3 +1,4 @@
+@charset "utf-8";
 html.swipebox {
   overflow: hidden!important;
 }
@@ -130,19 +131,24 @@ html.swipebox {
 }
 
 #swipebox-action #swipebox-close {
-  background-position: 15px 12px;
-  left: 40px;
+  background-position: 0px 0px;
+  left: 0;
 }
+
+#swipebox-action #swipebox-close:hover{ background-position: 0px -50px;}
+
 
 #swipebox-action #swipebox-prev {
-  background-position: -32px 13px;
-  right: 100px;
+  background-position: -50px 0px;
+  right: 60px;
 }
+#swipebox-action #swipebox-prev:hover{ background-position: -50px -50px;}
 
-#swipebox-action #swipebox-next {
-  background-position: -78px 13px;
-  right: 40px;
+#swipebox-action #swipebox-next{
+  background-position: -100px 0px;
+  right: 0px;
 }
+#swipebox-action #swipebox-next:hover{ background-position: -100px -50px;}
 
 #swipebox-action #swipebox-prev.disabled,
 #swipebox-action #swipebox-next.disabled {
@@ -221,6 +227,7 @@ html.swipebox {
     left: 0;
   }
 
+
   #swipebox-action #swipebox-prev {
     right: 60px;
   }
@@ -257,8 +264,9 @@ html.swipebox {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: white!important;
   font-size: 15px;
-  line-height: 43px;
-  font-family: Helvetica, Arial, sans-serif;
+  line-height: 50px;
+  font-weight:bold;
+  font-family:Helvetica,Arial,"微軟正黑體","新細明體",sans-serif;;
 }
 
 

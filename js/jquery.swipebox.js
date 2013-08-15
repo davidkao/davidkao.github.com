@@ -149,7 +149,7 @@
 
 				if(supportSVG){
 					var bg = $('#swipebox-action #swipebox-close').css('background-image');
-					bg = bg.replace('png', 'svg');
+					//bg = bg.replace('png', 'svg');
 					$('#swipebox-action #swipebox-prev,#swipebox-action #swipebox-next,#swipebox-action #swipebox-close').css({
 						'background-image' : bg
 					});
