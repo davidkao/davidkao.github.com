@@ -1,5 +1,6 @@
 $(document).ready(function(){
 					
+					
 					//function menu 
 					$(window).scroll(function() {
  					var height_1 = $('header').height()-40;
