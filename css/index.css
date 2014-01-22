@@ -15,7 +15,7 @@ header{
 	 }	
 
 
-.montserrat{font-family:'Montserrat',Georgia,Helvetica,Arial,"微軟正黑體","新細明體",sans-serif;} 
+.montserrat{font-family:'Montserrat',Georgia,Helvetica,Arial,"微軟正黑體","新細明體",sans-serif;font-size:100;} 
 .indent_away{text-indent:-9999px;position:absolute;top:0;}
 .full_back .visual_back,.full_back .visual_back2{position:fixed;}
 .mark{top:26%;z-index:3;display:block;width:100%;}
@@ -32,14 +32,14 @@ header{
 
 .main_btn .inner .btn,.func_btn .inner .btn{
 	border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;
-	-webkit-box-shadow: inset 1px 1px 2px 0px #fafafa,1px 1px 2px 0px #bebebe;
-	box-shadow: inset 1px 1px 2px 0px #fafafa,1px 1px 2px 0px #bebebe;
+	-webkit-box-shadow: inset 1px 1px 1px 0px #fafafa,1px 1px 2px 0px #bbb;
+	box-shadow: inset 1px 1px 1px 0px #fafafa,1px 1px 2px 0px #bbb;
 	padding:15px 0;
 	text-align:center;
 	width:110px;
 	display:block;
 	font-size:15px;
-	color:#999;
+	color:#777;
 	font-style:italic;
 	letter-spacing:1px;
 	transition:0.4s;-webkit-transition:0.4s;-moz-transition:0.4s;-o-transition:0.4s;
