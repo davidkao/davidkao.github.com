@@ -1,5 +1,6 @@
 $(document).ready(function(){
 					
+					
 					//function menu 
 					$(window).scroll(function() {
  					var height_1 = $('header').height()-40;
@@ -98,30 +99,6 @@ $(document).ready(function(){
 					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.50);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
 					
 					
-					// plus_anchor
-					$('body').plusAnchor({
-						easing: 'easeInOutExpo',
-						offsetTop:0,
-						speed: 900,
-						onInit: function( base ) {
-
-							if ( base.initHash != '' && $(base.initHash).length > 0 ) {
-								window.location.hash = 'hash_' + base.initHash.substring(1);
-								window.scrollTo(0, 0);
-
-								$(window).load( function() {
-
-									timer = setTimeout(function() {
-										$(base.scrollEl).animate({
-											scrollTop: $( base.initHash ).offset().top
-										}, base.options.speed, base.options.easing);
-									}, 2000); // setTimeout
-
-								}); // window.load
-							}; // if window.location.hash
-
-						} // onInit
-					});
 					
 					
 					//swipebox
