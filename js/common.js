@@ -75,7 +75,7 @@ $(document).ready(function(){
 						});
 					});
 					
-					//visual animation
+					/*
 					$('.mark img').hover(
 						function(){
 							$(this).parents(1).find('.visual_back2').stop().fadeTo(220,1);$(this).parents(1).find('.mark.pos1').stop().fadeTo(150,0.04);
@@ -84,11 +84,12 @@ $(document).ready(function(){
 										},
 
 						function(){
-							$(this).parents(1).find('.visual_back2').stop().fadeTo(100,0);$(this).parents(1).find('.mark.pos1').stop().fadeTo(250,0.40);
+							$(this).parents(1).find('.visual_back2').stop().fadeTo(100,0);$(this).parents(1).find('.mark.pos1').stop().fadeTo(500,0.6);
 							$(this).parents(1).find('.mark.pos2').stop().animate({'marginTop':0,'marginLeft':0,'opacity': 0},100);
 							$(this).parents(1).find('.mark.pos3').stop().animate({'marginTop':0,'marginLeft':0,'opacity': 0},140);
 										}
 					)
+					*/
 					
 					//add class 'black' to cover a black on portfolio
 					$('.portfolio .item').each(function(i){
@@ -96,7 +97,7 @@ $(document).ready(function(){
 					})
 					
 					// A portfolio hover effect
-					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.50);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
+					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.65);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
 					
 					
 					
