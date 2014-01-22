@@ -95,7 +95,7 @@ $(document).ready(function(){
 					})
 					
 					// A portfolio hover effect
-					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.40);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
+					$('.portfolio .item .inner').hover(function(){$(this).find('.hover .color').stop().fadeTo(150,0);$(this).find('.hover .magnifier').stop().fadeTo(150,0);},function(){$(this).find('.hover .color').stop().fadeTo(60,0.50);$(this).find('.hover .magnifier').stop().fadeTo(60,1);});
 					
 					
 					// plus_anchor
